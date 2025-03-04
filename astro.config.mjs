@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://pyre-docs.vercel.app', // Switch to custom domain ?
   integrations: [
       starlight({
           title: 'Pyre Documentation',
