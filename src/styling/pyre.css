@@ -1,0 +1,36 @@
+/*
+   Custom CSS for documentation
+   Generated VIA --> https://starlight.astro.build/guides/css-and-tailwind#color-theme-editor
+   Todo: Switch to tailwind implementation (after @astrojs/starlight-tailwind supports v4)
+*/
+
+
+/* Dark mode colors. */
+:root {
+	--sl-color-accent-low: #002448;
+	--sl-color-accent: #006ac0;
+	--sl-color-accent-high: #a0cdff;
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #e9eefa;
+	--sl-color-gray-2: #bcc2d1;
+	--sl-color-gray-3: #808ba8;
+	--sl-color-gray-4: #4d5772;
+	--sl-color-gray-5: #2e3750;
+	--sl-color-gray-6: #1e263d;
+	--sl-color-black: #141823;
+}
+/* Light mode colors. */
+:root[data-theme='light'] {
+	--sl-color-accent-low: #badaff;
+	--sl-color-accent: #006cc3;
+	--sl-color-accent-high: #003360;
+	--sl-color-white: #141823;
+	--sl-color-gray-1: #1e263d;
+	--sl-color-gray-2: #2e3750;
+	--sl-color-gray-3: #4d5772;
+	--sl-color-gray-4: #808ba8;
+	--sl-color-gray-5: #bcc2d1;
+	--sl-color-gray-6: #e9eefa;
+	--sl-color-gray-7: #f4f6fd;
+	--sl-color-black: #ffffff;
+}

@@ -2,27 +2,35 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+import tailwindcss from '@tailwindcss/vite';
+
 // https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-			title: 'My Docs',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
-			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-			],
-		}),
+  integrations: [
+      starlight({
+          title: 'Pyre Documentation',
+          description: 'Documentation for Pyre',
+          social: {
+              github: 'https://github.com/Pyreworks/docs',
+          },
+		  logo: {
+			src: './src/assets/logo.png'
+		  },
+          sidebar: [
+              {
+                  label: '1 - Introduction & Setup',
+                  items: [
+                      { label: '1.1 | Getting Started', slug: 'intro/getting-started' },
+                  ],
+              },
+          ],
+		  customCss: [
+			'./src/styling/pyre.css'
+		  ]
+      }),
 	],
+
+  vite: {
+    plugins: [tailwindcss()], // https://github.com/withastro/starlight/issues/2862
+  },
 });
