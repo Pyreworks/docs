@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/assets/logo.png" alt="Pyre Logo" />
+  <img src="/assets/logo.svg" alt="Pyre Logo" />
 </p>
 
 <h1 align="center">Pyre Documentation</h1>
